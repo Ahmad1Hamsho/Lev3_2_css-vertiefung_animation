@@ -1,0 +1,104 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+.section1 {
+  position: absolute;
+  background-color: black;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.section2{position: absolute;
+ left: 50vw;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 50vw;
+  }
+.box {
+  height: 5vh;
+  width: 2.5vw;
+  position: relative;
+  animation: ll 800ms ease-in-out infinite;
+  
+ 
+  
+}
+@keyframes ll {
+  50% {
+    transform: translateY(200px);
+  }
+  100% 
+}
+.box1 {
+  background-color: greenyellow;
+
+}
+.box2 {
+  background-color: blue;
+   animation-delay: 100ms;
+}
+.box3 {
+  background-color: yellow;
+   animation-delay: 150ms;
+}
+.box4 {
+  background-color: red;
+   animation-delay: 200ms;
+}
+.box5 {
+  background-color: rebeccapurple;
+ animation-delay: 250ms;
+}
+
+.circle {
+    position: absolute;
+  width: 5vw;
+  height: 10vh;
+  border-radius: 50%;
+  animation-name: circle1;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  
+}
+.circle1{
+    animation-delay: 2400ms;
+    background-color: red;
+}
+.circle2{
+    animation-delay: 600ms;
+    
+}
+.circle3{
+    animation-delay: 1200ms;
+    
+}
+.circle4{
+    animation-delay: 1800ms;
+    
+}
+
+@keyframes circle1 {
+  0% {
+    transform: translate(0, 0);
+    background-color: red;
+  }
+  25% {
+    transform: translate(43vw, 0);
+    background-color: yellow;
+  }
+  50% {
+    transform: translate(43vw, 50vh);
+    background-color: greenyellow;
+  }
+  75% {
+    transform: translate(0, 50vh);
+    background-color: blue;
+  }
+  
+}
